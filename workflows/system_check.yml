@@ -1,0 +1,13 @@
+name: system_check
+description: System health check workflow
+steps:
+  - action: "run_command"
+    command: "echo 'Checking disk space...'"
+    timeout: 30
+  - action: "run_command"
+    command: "echo 'Checking memory usage...'"
+    timeout: 30
+  - action: "run_command"
+    command: "echo 'Checking network connectivity...'"
+    timeout: 30
+

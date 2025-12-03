@@ -1,0 +1,10 @@
+name: example_command
+description: Example workflow that runs a simple command
+steps:
+  - action: "run_command"
+    command: "echo 'Hello from Neurops Workflow!'"
+    timeout: 30
+  - action: "run_command"
+    command: "date"
+    timeout: 30
+
